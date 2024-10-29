@@ -1,38 +1,26 @@
-import { Span } from "next/dist/trace";
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <div>
-      <span>
-        Free Courses 🌟 Sale Ends Soon, Get It Now
-      </span>
-      <nav>
-        <ul>
-          <li>Logo</li>
-          <li>Home</li>
-          <li>Courses</li>
-          <li>About Us</li>
-          <li>Princing</li>
-          <li>Contact</li>
-        </ul>
-        <ul>
-          <li>Sing Up</li>
-          <li>Login</li>
-        </ul>
-      </nav>
-      <div>
-        <img src="thunder.svg" />
-        <h1>Unlock Your Creative Potential</h1>
-        <span>
+    <div >
+      <div className="flex flex-col items-center mt-20">
+        <div className="flex items-center">
+          <Image src="thunder.svg" width={50} height={50} alt="logo-thunder" />
+          <h1 className="text-orangeShade-50 text-5xl">
+            Unlock Your
+            <span className="text-absoluteWhite">
+              Full Potential
+            </span>
+          </h1>
+        </div>
+        <span className="text-2xl mt-5">
           with Online Design and Development Courses.
         </span>
-        <span>
+        <span className="text-sm mb-5">
           Learn from Industry Experts and Enhance Your Skills.
         </span>
-        <div>
-          <button>Explore Coruses</button>
-          <button>View Princing</button>
+        <div className="flex justify-between w-[300px] ">
+          <button className="bg-orangeShade-50 text-absoluteWhite rounded-sm px-2 py-1">Explore Coruses</button>
+          <button className="bg-absoluteWhite text-absoluteBlack rounded-sm px-2 py-1">View Princing</button>
         </div>
       </div>
       <div>
